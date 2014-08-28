@@ -29,7 +29,7 @@
   <h1>Things i found while looking around</h1>
     <ul>
       <li ng-repeat="phone in phones | orderBy:orderProp">
-        <span>{{phone.Date | date:'mediumDate'}}</span> &mdash; <a href="{{phone.Link}}">{{phone.Title}}</a>
+        <span>{{phone.Date | date:'mediumDate'}}</span> &mdash; <a href="{{phone.Link}}" target="_blank">{{phone.Title}}</a>
       </li>
     </ul>
 </div>
