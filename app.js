@@ -1,9 +1,9 @@
-var phonecatApp = angular.module('phonecatApp', []);
+var phonecatApp = angular.module('thingsIFound', []);
 
-phonecatApp.controller('PhoneListCtrl', function ($scope, $http) {
+phonecatApp.controller('FoundCtrl', function ($scope, $http) {
   $http.get('http://assignto.appspot.com/posts.json').success(function(data) {
-    $scope.phones = data.AllPosts;
+    $scope.posts = data.AllPosts;
   });
 
-  $scope.orderProp = 'age';
+  $scope.orderProp = 'Date';
 });
