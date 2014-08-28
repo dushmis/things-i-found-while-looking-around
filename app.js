@@ -1,8 +1,7 @@
 var phonecatApp = angular.module('phonecatApp', []);
 
 phonecatApp.controller('PhoneListCtrl', function ($scope, $http) {
-  $http.get('http://localhost:8080/posts.json').success(function(data) {
-    console.log(data);
+  $http.get('http://2.assignto.appspot.com/posts.json').success(function(data) {
     $scope.phones = data.AllPosts;
   });
 
