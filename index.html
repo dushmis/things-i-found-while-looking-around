@@ -29,7 +29,7 @@
   <h1>Things i found while looking around</h1>
     <ul>
       <li ng-repeat="post in posts | orderBy:orderProp:true">
-        <span>{{post.Date | date:'mediumDate'}}</span> &mdash; <a href="{{post.Link}}" target="_blank">{{post.Title}}</a>
+        <span>{{post.Date | date:'MMM dd, y'}}</span> &mdash; <a href="{{post.Link}}" target="_blank">{{post.Title}}</a>
       </li>
     </ul>
 </div>
