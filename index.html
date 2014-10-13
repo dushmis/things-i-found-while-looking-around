@@ -28,7 +28,7 @@
   <div id="issuetwo">
   <h1>Things i found while looking around</h1>
     <ul>
-      <li ng-repeat="post in posts | orderBy:orderProp:true">
+      <li ng-repeat="post in posts | orderBy:orderProp:true | uppercase">
         <span>{{post.Date | date:'MMM dd, y'}}</span> &mdash; <a href="{{post.Link}}" target="_blank">{{post.Title}}</a>
       </li>
     </ul>
